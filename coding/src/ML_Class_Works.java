@@ -1,29 +1,29 @@
 public class ML_Class_Works {
     public static void main(String[] args) {
-        float[] x = {1,2,3,4,5};
-        float[] y = {10,8,6,4,2};
+                float[] x = {1,2,3,4,5};
+                float[] y = {50,60,70,80,90};
 
-        float xsum = sum(x);
-        float ysum = sum(y);
-        System.out.println("X_Sum = "+ xsum);
-        System.out.println("Y_Sum = "+ ysum);
-
-
-
-        float m = slope(x, xsum, y, ysum);
-        System.out.println("Slope = " + m);
+                float xsum = sum(x);
+                float ysum = sum(y);
+                System.out.println("X_Sum = "+ xsum);
+                System.out.println("Y_Sum = "+ ysum);
 
 
-        float[] yp = new float[x.length];
 
-        float c = ysum - (m * xsum);
-        System.out.println("C == " + c);
-        System.out.println();
+                float m = slope(x, xsum, y, ysum);
+                System.out.println("Slope = " + m);
 
 
-        for(int i = 0; i < x.length; i++){
-            yp[i] = (m * x[i]) + c;
-            System.out.println("Y = " + m + " X " + x[i] + " + " + c + " = " + yp[i]);
+                float[] yp = new float[x.length];
+
+                float c = ysum - (m * xsum);
+                System.out.println("C == " + c);
+                System.out.println();
+
+
+                for(int i = 0; i < x.length; i++){
+                    yp[i] = (m * x[i]) + c;
+                    System.out.println("Y = " + m + " X " + x[i] + " + " + c + " = " + yp[i]);
 
         }
         System.out.println();
