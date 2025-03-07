@@ -7,6 +7,7 @@ public class Q23_Print_Encoding {
     }
 
     public static void Printencoding(String str, String asf){
+
         if(str.length() == 0){
             System.out.println(asf);
             return;
