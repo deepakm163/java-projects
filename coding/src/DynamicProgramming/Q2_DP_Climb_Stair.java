@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package DynamicProgramming;
 
 public class Q2_DP_Climb_Stair {
     public static void main(String[] args){
